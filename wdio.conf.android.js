@@ -64,8 +64,7 @@ exports.config = {
         'appium:platformVersion': '11.0',
         'appium:automationName': 'UiAutomator2',
         'appium:appPackage': process.env.APP_PACKAGE,
-        'appium:appActivity': process.env.APP_ACTIVITY,
-        'appium:noReset': true
+        'appium:appActivity': process.env.APP_ACTIVITY
     }],
     //
     // ===================

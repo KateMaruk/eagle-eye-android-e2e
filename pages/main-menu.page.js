@@ -6,6 +6,7 @@ exports.MainMenuPage = class MainMenuPage{
         this.mainMenuIcon = $('id=com.eagleeye.mobileapp:id/img_menu');
         this.dashboardMenuOption = $('//*[@text="Dashboard"]');
         this.layoutsMenuOption = $('//*[@text="Layouts"]');
+        this.usersMenuOption = $('//*[@text="Users"]');
     }
 
     async openDashboardFromMenu() {
@@ -16,6 +17,11 @@ exports.MainMenuPage = class MainMenuPage{
     async openLayoutsFromMenu() {
         await this.openMainMenuSidebar();
         await this.layoutsMenuOption.touchAction('tap');
+    }
+
+    async openUsersFromMenu() {
+        await this.openMainMenuSidebar();
+        await this.usersMenuOption.touchAction('tap');
     }
 
     async openMainMenuSidebar() {

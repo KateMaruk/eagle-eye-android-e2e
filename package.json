@@ -11,7 +11,9 @@
     "appium-uiautomator2-driver": "^2.29.5"
   },
   "scripts": {
-    "android tests": "wdio run wdio.conf.android.js"
+    "tests-layouts": "wdio wdio.conf.android.js --spec test/specs/layouts.spec.js",
+    "tests-users": "wdio wdio.conf.android.js --spec test/specs/users.spec.js",
+    "tests-all": "wdio wdio.conf.android.js"
   },
   "dependencies": {
     "@wdio/globals": "^8.15.10",

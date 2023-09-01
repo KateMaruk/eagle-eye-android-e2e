@@ -3,9 +3,9 @@ const { LoginPage } = require("../../pages/login.page");
 const { LayoutsPage } = require("../../pages/layouts.page");
 const { NewLayoutPage } = require("../../pages/new-layout.page");
 const { randomValue } = require("../../helpers/string-generator");
-const {MainMenuPage} = require("../../pages/main-menu.page");
+const { MainMenuPage } = require("../../pages/main-menu.page");
 
-describe('Layouts suite', () => {
+describe('Layouts', () => {
 
     let basePage, loginPage, layoutsPage, newLayoutPage, mainMenuPage;
 
