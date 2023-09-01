@@ -17,7 +17,7 @@ describe('Layouts suite', () => {
         mainMenuPage = new MainMenuPage();
 
         await basePage.launchTheApp();
-        // await loginPage.loginIntoAppAsEndUser();
+        await loginPage.loginIntoAppAsEndUser();
 
     });
 
