@@ -1,9 +1,9 @@
 const { BasePage } = require('../../pages/base.page');
 const { LoginPage } = require("../../pages/login.page");
 const { MainMenuPage } = require("../../pages/main-menu.page");
-const {NewUserPage} = require("../../pages/new-user.page");
-const {UsersPage} = require("../../pages/users.page");
-const {randomValue} = require("../../helpers/string-generator");
+const { NewUserPage } = require("../../pages/new-user.page");
+const { UsersPage } = require("../../pages/users.page");
+const { randomValue } = require("../../helpers/string-generator");
 
 describe('Users', () => {
 

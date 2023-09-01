@@ -18,20 +18,19 @@ describe('Layouts', () => {
 
         await basePage.launchTheApp();
         await loginPage.loginIntoAppAsEndUser();
-
     });
 
     afterEach('Close the app', async () => {
         basePage = new BasePage();
         await basePage.closeTheApp();
-    })
+    });
 
     it('Create new layout', async () => {
         let layout = {
             name: 'Autotest ' + randomValue(),
             cameraAspectRatio: '4:3',
             maxCamerasPerRow: '6',
-            showCamerasTitleBar: false
+            showCamerasTitleBar: true
         }
         await layoutsPage.clickOnMenuIconRightCorner();
         await layoutsPage.clickOnNewLayoutOption();
@@ -46,6 +45,6 @@ describe('Layouts', () => {
         await mainMenuPage.openLayoutsFromMenu();
 
         await layoutsPage.isAddedLayoutExist(layout.name);
-    })
+    });
 
 })

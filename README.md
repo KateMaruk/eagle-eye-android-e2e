@@ -20,3 +20,7 @@ Test run:
 Project structure:
 - `pages` - this directory uses for storing 'page' classes. Each page class contains a list of element locators and methods for interaction with them
 - `test/specs` - this directory contains spec files with tests
+
+Hooks:
+
+Mocha hooks (`beforeEach()`, `afterEach()`) and functions (`it()`, `describe()`) are used for creating and grouping tests.
