@@ -8,7 +8,7 @@
 Prerequisites:
 - The _.env_ file added to the root of the project with 3 env variables:
     - `LOGIN_EMAIL` (email from your account)
-    - `LOGIN_PWD` (password from your account)
+    - `LOGIN_PASSWORD` (password from your account)
     - `APP_PACKAGE` (capability for Android app)
     - `APP_ACTIVITY` (capability for Android app)
 - Desired capabilities for physical Android device (or emulator) should be provided into WebdriverIO configuration file. In this case file is `wdio.conf.android.js`.
