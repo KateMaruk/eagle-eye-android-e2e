@@ -27,7 +27,7 @@ exports.LoginPage = class LoginPage {
         await this.clickOnLogInBtn();
 
         const layoutsPage = new LayoutsPage();
-        await layoutsPage.isLayoutsPageOpened();
+        await layoutsPage.layoutsPageTitle.waitForDisplayed({ timeout: 15000 });
     }
 
 }
