@@ -1,6 +1,6 @@
-const {$} = require("@wdio/globals");
-const {BasePage} = require("./base.page");
-exports.MainMenuPage = class MainMenuPage{
+const { $ } = require("@wdio/globals");
+
+exports.MainMenuPage = class MainMenuPage {
 
     constructor() {
         this.mainMenuIcon = $('id=com.eagleeye.mobileapp:id/img_menu');

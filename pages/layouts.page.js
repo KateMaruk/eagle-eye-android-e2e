@@ -1,5 +1,5 @@
 const { $, expect } = require('@wdio/globals');
-const {BasePage} = require("./base.page");
+const { BasePage } = require("./base.page");
 
 exports.LayoutsPage = class LayoutsPage extends BasePage {
 

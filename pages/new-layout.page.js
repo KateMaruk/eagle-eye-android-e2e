@@ -1,6 +1,5 @@
-const { $, driver } = require('@wdio/globals');
-const { Key } = require('webdriverio');
-const {BasePage} = require("./base.page");
+const { $ } = require('@wdio/globals');
+const { BasePage } = require("./base.page");
 
 exports.NewLayoutPage = class NewLayoutPage extends BasePage {
 
